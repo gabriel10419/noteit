@@ -1,0 +1,191 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 2rem;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #1c1e21;
+}
+
+.navigation-links {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.navigation-links a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.navigation-links a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select, form button {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+
+form button {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+#submit-button {
+  background-color: #1877f2;
+  color: white;
+}
+#submit-button:hover {
+  background-color: #166fe5;
+}
+
+#cancel-edit-button {
+  background-color: #e4e6eb;
+  color: #4b4f56;
+}
+#cancel-edit-button:hover {
+  background-color: #dcdde1;
+}
+
+.hidden {
+  display: none;
+}
+
+#notes-container, #notes-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.note-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.note-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.note-card .note-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #1c1e21;
+}
+
+.note-card .note-tags {
+  font-size: 0.85rem;
+  color: #606770;
+  font-style: italic;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto; /* Empurra os botões para baixo */
+  padding-top: 1rem;
+  border-top: 1px solid #f0f2f5;
+}
+
+.card-actions button {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background-color: #e4e6eb;
+  color: #4b4f56;
+}
+
+.delete-btn {
+  background-color: #fa3e3e;
+  color: white;
+  border-color: #fa3e3e;
+}
+
+.filter-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-controls input, .filter-controls select {
+  flex-grow: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+
+.filter-controls button {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+#apply-filters-btn {
+  background-color: #42b72a;
+  color: white;
+}
+#apply-filters-btn:hover {
+  background-color: #36a420;
+}
+
+#reset-filters-btn {
+  background-color: #e4e6eb;
+  color: #4b4f56;
+}
+#reset-filters-btn:hover {
+  background-color: #dcdde1;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Lista - NoteIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minha Lista de Anotações</h1>
+    <div class="navigation-links">
+        <a href="index.html">Adicionar Anotação</a>
+        <a href="list.html">Ver Minha Lista</a>
+    </div>
+
+    <div class="filter-container">
+        <h3>Filtros e Ordenação</h3>
+        <div class="filter-controls">
+            <input type="text" id="tag-filter" placeholder="Filtrar por tag (ex: filme)">
+            
+            <select id="status-filter">
+                <option value="">Todos os Status</option>
+                <option value="PLANNED">Planejado</option>
+                <option value="IN_PROGRESS">Em Progresso</option>
+                <option value="COMPLETED">Concluído</option>
+                <option value="DROPPED">Abandonado</option>
+            </select>
+
+            <select id="sort-filter">
+                <option value="">Ordenar por...</option>
+                <option value="rating_desc">Nota (Maior para Menor)</option>
+                <option value="rating_asc">Nota (Menor para Maior)</option>
+                <option value="name_asc">Nome (A-Z)</option>
+            </select>
+
+            <button id="apply-filters-btn">Aplicar</button>
+            <button id="reset-filters-btn">Limpar Filtros</button>
+        </div>
+    </div>
+
+    <div id="notes-list-container">
+        </div>
+
+    <script src="list.js"></script>
+</body>
+</html>
